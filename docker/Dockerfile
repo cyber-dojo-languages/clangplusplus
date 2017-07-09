@@ -1,8 +1,8 @@
-FROM       cyberdojofoundation/ubuntu-build-essential:14.04
+FROM       cyberdojofoundation/ubuntu-build-essential:17.04
 MAINTAINER Byran Wills-Heath <byran@adgico.co.uk>
 
-ENV CXX=clang++ CC=clang
+RUN apt-get update
+RUN apt-get install -y clang-4.0
 
-ADD install.sh /
-RUN /install.sh && \
-    rm -f /install.sh
+RUN update-alternatives --install /usr/bin/cc  cc  /usr/bin/clang-4.0   100
+RUN update-alternatives --install /usr/bin/c++ c++ /usr/bin/clang++-4.0 100
