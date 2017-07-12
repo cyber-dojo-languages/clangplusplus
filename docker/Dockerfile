@@ -1,5 +1,5 @@
-FROM       cyberdojofoundation/ubuntu-build-essential:17.04
-MAINTAINER Byran Wills-Heath <byran@adgico.co.uk>
+FROM  cyberdojofoundation/ubuntu-build-essential:17.04
+LABEL maintainer=byran@adgico.co.uk
 
 ARG VERSION=4.0
 
