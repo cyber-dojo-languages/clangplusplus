@@ -4,4 +4,4 @@
 
 ![Build Status](https://travis-ci.org/cyber-dojo-languages/clangplusplus.svg?branch=master)
 
-Version=5.0.1
+[Version=5.0.1](https://github.com/cyber-dojo-languages/clangplusplus/blob/master/check_version.sh)
