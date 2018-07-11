@@ -1,10 +1,8 @@
-FROM  cyberdojofoundation/ubuntu-build-essential:16.04
+FROM  cyberdojofoundation/ubuntu-build-essential:18.04
 LABEL maintainer=jon@jaggersoft.com
 
-ADD install.sh /
-
-RUN /install.sh && \
-    rm -f /install.sh
-
-RUN apt-get install --yes python-pip \
- && pip install gcovr
+RUN apt-get update \
+ && apt-get install --yes \
+      clang-6.0 \
+      lldb-6.0 \
+      lld-6.0
