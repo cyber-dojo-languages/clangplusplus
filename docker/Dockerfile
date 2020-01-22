@@ -13,8 +13,7 @@ RUN apt-get update && apt-get install --yes coreutils bash tar file
 
 LABEL maintainer=jon@jaggersoft.com
 
-RUN apt-get update \
- && apt-get install --yes \
+RUN apt-get install --yes \
       clang-6.0 \
       lldb-6.0 \
       lld-6.0
