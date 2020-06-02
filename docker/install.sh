@@ -1,5 +1,7 @@
 #!/bin/bash -Eeu
 
+apt-get update
+
 cd /usr/local
 
 apt-get install --yes \
