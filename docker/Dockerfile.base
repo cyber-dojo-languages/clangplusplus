@@ -4,7 +4,7 @@ LABEL maintainer=jon@jaggersoft.com
 COPY install.sh .
 RUN ./install.sh && rm ./install.sh
 
-ENV PATH=/usr/local/clang_9.0.0/bin:$PATH \
-    LD_LIBRARY_PATH=/usr/local/clang_9.0.0/lib:$LD_LIBRARY_PATH \
+ENV PATH=/usr/local/clang_10.0.0/bin:$PATH \
+    LD_LIBRARY_PATH=/usr/local/clang_10.0.0/lib:$LD_LIBRARY_PATH \
     CC=clang \
     CXX=clang++
