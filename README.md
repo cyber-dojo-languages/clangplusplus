@@ -1,5 +1,5 @@
-[![CircleCI](https://circleci.com/gh/cyber-dojo-languages/clangplusplus.svg?style=svg)](https://circleci.com/gh/cyber-dojo-languages/clangplusplus)
+[![Github Action (master)](https://github.com/cyber-dojo-languages/clangpluplus/actions/workflows/main.yml/badge.svg)](https://github.com/cyber-dojo-languages/clangpluplus/actions)
 
-## image_name="cyberdojofoundation/clangplusplus"
+## image_name="ghcr.io/cyber-dojo-languages/clangplusplus"
 
 ![cyber-dojo.org home page](https://github.com/cyber-dojo/cyber-dojo/blob/master/shared/home_page_snapshot.png)
