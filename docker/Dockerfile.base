@@ -1,19 +1,12 @@
 FROM ghcr.io/cyber-dojo-languages/ubuntu-build-essential-22-04:651ad74
 LABEL maintainer=jon@jaggersoft.com
 
-COPY install.sh .
-RUN ./install.sh && rm ./install.sh
+ENV DEBIAN_FRONTEND=noninteractive
 
-ENV PATH=/usr/local/clang_20.1.8/bin:$PATH \
-    LD_LIBRARY_PATH=/usr/local/clang_20.1.8/lib:$LD_LIBRARY_PATH \
-    CC=clang \
+RUN apt-get update && apt-get install --yes \
+  clang \
+  llvm \
+  gcovr
+
+ENV CC=clang \
     CXX=clang++
-
-#RUN apt-get update
-#RUN apt-get install lsb-release wget software-properties-common gnupg
-#RUN bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
-
-#RUN apt-get update
-#RUN apt-get --yes upgrade
-#RUN apt-get install --yes clang
-
