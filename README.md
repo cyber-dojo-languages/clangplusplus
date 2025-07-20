@@ -1,4 +1,4 @@
-[![Github Action (master)](https://github.com/cyber-dojo-languages/clangpluplus/actions/workflows/main.yml/badge.svg)](https://github.com/cyber-dojo-languages/clangpluplus/actions)
+[![Github Action (master)](https://github.com/cyber-dojo-languages/clangplusplus/actions/workflows/main.yml/badge.svg)](https://github.com/cyber-dojo-languages/clangplusplus/actions)
 
 ## image_name="ghcr.io/cyber-dojo-languages/clangplusplus"
 
