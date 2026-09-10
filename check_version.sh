@@ -5,7 +5,7 @@ readonly JSON=`cat ${MY_DIR}/docker/image_name.json`
 [[ ${JSON} =~ ${REGEX} ]]
 readonly IMAGE_NAME="${BASH_REMATCH[1]}"
 
-readonly EXPECTED=18.1.3
+readonly EXPECTED=18.1
 readonly ACTUAL=$(docker run --rm -i ${IMAGE_NAME} sh -c 'clang++ --version')
 
 if echo "${ACTUAL}" | grep -q "${EXPECTED}"; then
